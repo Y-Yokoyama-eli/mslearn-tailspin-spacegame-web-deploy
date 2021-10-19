@@ -127,8 +127,8 @@ stages:
     dependsOn: Test
     jobs:
       - deployment: Deploy
-      pool:
-        vmImage: ubuntu-20.04
+        pool:
+          vmImage: ubuntu-20.04
       environment: staging
       variables:
       -  group: Release
